@@ -1,0 +1,50 @@
+.homepage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  animation: fadeInAnimation 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.start-button {
+  position: absolute;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in;
+  bottom: 100px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 200px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    bottom: -100px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 100px;
+  }
+}

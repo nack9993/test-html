@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="summary.css" />
+    <link rel="stylesheet" href="global.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+    <script type="text/javascript" src="summary.js" defer></script>
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    <div class="page-container">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-sticky">
+          <div class="nav-image">
+            <img class="nav-icon" src="assets/icon-menu.png" width="250" />
+            <img id="toggleMenu" src="assets/lll.png" />
+          </div>
+
+          <div id="nav-modal" class="modal">
+            <div class="nav-container">
+              <div class="nav-list">
+                <div class="nav-item">Home</div>
+                <hr />
+                <div class="nav-item">Preface</div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The N Land
+                </div>
+
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The M Land
+                </div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The D Land
+                </div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">The Summary of</div>
+                  Dark Trid
+                </div>
+                <hr />
+
+                <div class="nav-item">Contact</div>
+              </div>
+              <img src="assets/bg-menu.png" width="1000" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video autoplay muted loop class="video-text">
+        <source src="assets/bg-video-text.mp4" type="video/mp4" />
+      </video>
+      <div class="summary">
+        <div class="devil">
+          <div class="devil-title">
+            <img src="assets/title-devil.png" />
+          </div>
+
+          <div class="summary-container">
+            <img src="assets/monster/n-devil.png" />
+            <img src="assets/monster/m-devil.png" />
+            <img src="assets/monster/p-devil.png" />
+          </div>
+        </div>
+
+        <video autoplay muted loop class="video-text">
+          <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
+        </video>
+
+        <div class="monster">
+          <div class="monster-title">
+            <img src="assets/title-monster.png" />
+          </div>
+
+          <div class="summary-container">
+            <img src="assets/monster/n-monster.png" />
+            <img src="assets/monster/m-monster.png" />
+            <img src="assets/monster/p-monster.png" />
+          </div>
+        </div>
+
+        <div class="souvenir">
+          <div class="souvenir-container">
+            <div id="clickcard" class="souvenir-card">
+              <img id="card" src="assets/n-key.png" />
+              <div id="actions" class="card-actions">
+                <input id="password" class="card-input" type="text" key="n" />
+
+                <img
+                  class="enter-button"
+                  id="enter"
+                  src="assets/button-enter.png"
+                  width="150"
+                />
+              </div>
+            </div>
+          </div>
+
+          <img src="assets/bg-souvenir.png" />
+        </div>
+
+        <div class="follow">
+          <img src="assets/icon-follow.png" />
+        </div>
+
+        <div class="contact">
+          <video autoplay muted loop class="video-text">
+            <source src="assets/bg-footer.mp4" type="video/mp4" />
+          </video>
+          <div class="contact-button">
+            <img id="contact" src="assets/icon-contact.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

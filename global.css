@@ -1,0 +1,117 @@
+@font-face {
+  font-family: RSU;
+  src: url("font/RSU_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Typographergotisch";
+  src: url("font/typographergotisch.a-bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "RSU", Courier, monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.nav-sticky {
+  height: 100vh;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+
+.nav-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-list {
+  font-size: 3rem;
+  position: absolute;
+  width: 400px;
+  text-align: center;
+}
+
+.nav-item {
+  font-family: Typographergotisch;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.nav-small-item {
+  font-family: Typographergotisch;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.nav-item:hover {
+  color: rgb(213, 75, 75);
+}
+.nav-modal {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-image {
+  position: relative;
+  z-index: 3;
+}
+
+.page-container {
+  position: relative;
+}
+
+#toggleMenu {
+  position: absolute;
+  right: 10.5rem;
+  top: 11rem;
+  z-index: 3;
+}
+hr {
+  color: black;
+  background-color: black;
+  height: 3px;
+}
+
+.modal {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.modal.active {
+  display: block;
+}
