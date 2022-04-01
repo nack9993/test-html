@@ -1,22 +1,38 @@
 const toggle = document.getElementById("toggleMenu");
+const start = document.getElementById("start");
 
-console.log(window.location.pathname);
-
-window.location.href = "/somewhere/else";
-// HACKY
-const path = window.location.pathname;
+const route = {
+  home: "/",
+  preface: "landing",
+  nLand: "nLand",
+  mLand: "mLand",
+  pLand: "pLand",
+  summary: "summary",
+  contact: "contact",
+};
 
 let isOpen = false;
 
-toggle.addEventListener("click", () => {
-  const navModal = document.getElementById("nav-modal");
-  isOpen = !isOpen;
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    const nav = document.getElementById("nav");
+    const navModal = document.getElementById("nav-modal");
+    isOpen = !isOpen;
 
-  if (isOpen) {
-    toggleMenu.src = "assets/x.png";
-    navModal.classList.add("active");
-  } else {
-    toggleMenu.src = "assets/lll.png";
-    navModal.classList.remove("active");
-  }
-});
+    if (isOpen) {
+      toggleMenu.src = "assets/x.png";
+      nav.style.pointerEvents = "all";
+      navModal.classList.add("active");
+    } else {
+      toggleMenu.src = "assets/lll.png";
+      nav.style.pointerEvents = "none";
+      navModal.classList.remove("active");
+    }
+  });
+}
+
+if (start) {
+  start.addEventListener("click", () => {
+    window.location.href = `${route["preface"]}.html`;
+  });
+}
