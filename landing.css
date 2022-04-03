@@ -128,6 +128,10 @@ li.active {
   opacity: 1;
 }
 
+.ready-container {
+  height: 100%;
+}
+
 #cloud,
 #fire,
 #square {
@@ -165,6 +169,10 @@ li.active {
 
 #square.active {
   background-image: url("assets/button-square-active.png");
+}
+
+#go {
+  cursor: pointer;
 }
 
 .character-modal {

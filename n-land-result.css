@@ -1,0 +1,24 @@
+body {
+  background-image: url("assets/bg-black.gif");
+  overflow-x: hidden;
+}
+
+.result-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -10rem;
+}
+
+.result-card-bg {
+  position: absolute;
+  top: 25rem;
+  z-index: -1;
+}
+
+.result-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

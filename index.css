@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .homepage {
   height: 100%;
   display: flex;
