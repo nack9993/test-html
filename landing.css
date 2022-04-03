@@ -94,6 +94,7 @@ li.active {
 .minigame-row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .minigame-password {
