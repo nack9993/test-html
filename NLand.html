@@ -8,51 +8,256 @@
   </head>
 
   <body>
-    <!-- NAV -->
-    <div class="nav">
-      <div class="nav-sticky">
-        <div class="nav-image">
-          <img class="nav-icon" src="assets/icon-menu.png" width="250" />
-          <img id="toggleMenu" src="assets/lll.png" />
+    <div class="page-container">
+      <!-- NAV -->
+      <div class="nav">
+        <div class="nav-sticky">
+          <div class="nav-image">
+            <img class="nav-icon" src="assets/icon-menu.png" width="250" />
+            <img id="toggleMenu" src="assets/lll.png" />
+          </div>
+
+          <div id="nav-modal" class="modal">
+            <div class="nav-container">
+              <div class="nav-list">
+                <div class="nav-item">Home</div>
+                <hr />
+                <div class="nav-item">Preface</div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The N Land
+                </div>
+
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The M Land
+                </div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">Journy to</div>
+                  The D Land
+                </div>
+                <hr />
+
+                <div class="nav-item">
+                  <div class="nav-small-item">The Summary of</div>
+                  Dark Trid
+                </div>
+                <hr />
+
+                <div class="nav-item">Contact</div>
+              </div>
+              <img src="assets/bg-menu.png" width="1000" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing">
+        <div style="position: relative">
+          <video autoplay muted loop class="video-text">
+            <source src="assets/bg-n-land-text.mp4" type="video/mp4" />
+          </video>
+
+          <img
+            style="position: absolute; left: 25%; top: 35%"
+            src="/assets/n-land-title.png"
+          />
         </div>
 
-        <div id="nav-modal" class="modal">
-          <div class="nav-container">
-            <div class="nav-list">
-              <div class="nav-item">Home</div>
-              <hr />
-              <div class="nav-item">Preface</div>
-              <hr />
+        <img src="/assets/n-land-slide-1.png" />
 
-              <div class="nav-item">
-                <div class="nav-small-item">Journy to</div>
-                The N Land
+        <div style="display: flex; justify-content: center; padding: 4rem">
+          <img src="/assets/question.png" />
+        </div>
+
+        <div
+          style="
+            background-image: url('/assets/bg-n-land-question.png');
+            background-repeat: no-repeat;
+          "
+        >
+          <div style="display: flex; flex-direction: column">
+            <!--  QUESTION ONE -->
+            <div style="margin-top: 250px; margin-left: 10%">
+              <span
+                style="
+                  display: block;
+                  font-size: 2rem;
+                  color: white;
+                  /* padding-bottom: 1rem; */
+                  margin-bottom: 5rem;
+                  margin-left: 3rem;
+                "
+              >
+                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
+                นอกจากคุณแล้ว ยังพบว่ามี<br />
+                คนอื่นอีกมากมาย ถ้าหาก<br />
+                ผู้ชนะมีได้ 1 คน...<br />
+                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
+              </span>
+
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                  margin-bottom: 1rem;
+                "
+              >
+                ตัวฉัน
               </div>
 
-              <hr />
-
-              <div class="nav-item">
-                <div class="nav-small-item">Journy to</div>
-                The M Land
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                "
+              >
+                คนอื่น
               </div>
-              <hr />
-
-              <div class="nav-item">
-                <div class="nav-small-item">Journy to</div>
-                The D Land
-              </div>
-              <hr />
-
-              <div class="nav-item">
-                <div class="nav-small-item">The Summary of</div>
-                Dark Trid
-              </div>
-              <hr />
-
-              <div class="nav-item">Contact</div>
             </div>
-            <img src="assets/bg-menu.png" width="1000" />
+
+            <!--  QUESTION TWO -->
+            <div style="margin-top: 400px; margin-left: 10%">
+              <span
+                style="
+                  display: block;
+                  font-size: 2rem;
+                  color: white;
+                  /* padding-bottom: 1rem; */
+                  margin-bottom: 5rem;
+                  margin-left: 3rem;
+                "
+              >
+                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
+                นอกจากคุณแล้ว ยังพบว่ามี<br />
+                คนอื่นอีกมากมาย ถ้าหาก<br />
+                ผู้ชนะมีได้ 1 คน...<br />
+                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
+              </span>
+
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                  margin-bottom: 1rem;
+                "
+              >
+                ตัวฉัน
+              </div>
+
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                "
+              >
+                คนอื่น
+              </div>
+            </div>
+
+            <!--  QUESTION THREE -->
+            <div style="margin-top: 450px; margin-left: 10%">
+              <span
+                style="
+                  display: block;
+                  font-size: 2rem;
+                  color: white;
+                  /* padding-bottom: 1rem; */
+                  margin-bottom: 5rem;
+                  margin-left: 3rem;
+                "
+              >
+                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
+                นอกจากคุณแล้ว ยังพบว่ามี<br />
+                คนอื่นอีกมากมาย ถ้าหาก<br />
+                ผู้ชนะมีได้ 1 คน...<br />
+                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
+              </span>
+
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                  margin-bottom: 1rem;
+                "
+              >
+                ตัวฉัน
+              </div>
+
+              <div
+                style="
+                  background-image: url(/assets/button-question.png);
+                  height: 170px;
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  background-repeat: no-repeat;
+                "
+              >
+                คนอื่น
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="ready-container">
+          <video autoplay muted loop class="video-text">
+            <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
+          </video>
+
+          <div
+            style="
+              height: 70vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img src="assets/icon-ready.png" width="900" />
+            <img id="go" src="assets/button-go.png" width="500" />
+          </div>
+          <video autoplay muted loop class="video-text">
+            <source src="assets/bg-footer.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
