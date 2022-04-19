@@ -19,6 +19,11 @@ const closeButton = document.getElementById("close");
 const goButton = document.getElementById("go");
 const characterModal = document.getElementById("character-modal");
 
+if (document.readyState === "complete") {
+  console.log("GO");
+  // The page is fully loaded
+}
+
 slide1.addEventListener("click", (e) => {
   slide1.classList.add("active");
   slide2.classList.remove("active");
@@ -159,4 +164,9 @@ function resetPassword() {
   password.forEach((pass) => {
     pass.classList.remove("active");
   });
+}
+
+function checkLoading() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("page").style.display = "block";
 }

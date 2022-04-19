@@ -8,8 +8,10 @@
     <title>Landing page</title>
   </head>
 
-  <body>
-    <div class="page-container">
+  <body onload="checkLoading()">
+    <div id="loader">Load</div>
+
+    <div style="display: none" id="page" class="page-container">
       <!-- NAV -->
       <div id="nav" class="nav">
         <div class="nav-sticky">
