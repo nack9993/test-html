@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="rssBlock">
+      <p class="cnnContents">
+        <span class="marqueeStyle"
+          >&nbsp;DEVILMONDEVILMONDEVILMONDEVILMONDEVILMON</span
+        >
+      </p>
+    </div>
+  </body>
+
+  <style>
+    @font-face {
+      font-family: "Typographergotisch";
+      src: url("font/typographergotisch.a-bold.ttf");
+    }
+
+    #rssBlock {
+      width: 100vw;
+      left: 0px;
+      background: #ffffff;
+      position: absolute;
+      overflow: hidden;
+    }
+
+    /*remove p*/
+    .cnnContents {
+      overflow: hidden;
+      font-family: "Typographergotisch";
+      width: 100%;
+      padding-top: 20px;
+      margin: 0 auto;
+      font-size: 12rem;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-family: "Museo";
+      font-weight: 300;
+    }
+
+    .marqueeStyle {
+      display: inline-block;
+      /* Apply animation to this element */
+      animation: scrolling-left1 40s linear infinite;
+      animation-delay: -40s;
+    }
+
+    /* scrolling-left is continuous/repeatly text */
+    @keyframes scrolling-left1 {
+      0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+      }
+    }
+  </style>
+</html>

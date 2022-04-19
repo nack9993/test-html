@@ -1,6 +1,15 @@
 @font-face {
-  font-family: RSU;
+  font-family: "RSU";
   src: url("font/RSU_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RSU";
+  src: url("font/RSU_BOLD.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -86,6 +95,7 @@ body {
 
 .page-container {
   position: relative;
+  background-image: url("assets/bg-black.gif");
 }
 
 #toggleMenu {

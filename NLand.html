@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="css/n-land.css" />
     <script type="text/javascript" src="main.js" defer></script>
     <title>Nland Page</title>
   </head>
@@ -58,207 +58,116 @@
         </div>
       </div>
 
-      <div class="landing">
-        <div style="position: relative">
-          <video autoplay muted loop class="video-text">
-            <source src="assets/bg-n-land-text.mp4" type="video/mp4" />
-          </video>
+      <div class="n-land">
+        <video
+          style="width: 100%; height: auto"
+          autoplay
+          muted
+          loop
+          class="video-text"
+        >
+          <source src="assets/bg-n-land-text.mp4" type="video/mp4" />
+        </video>
 
-          <img
-            style="position: absolute; left: 25%; top: 35%"
-            src="/assets/n-land-title.png"
-          />
+        <img class="n-land__title" src="/assets/n-land-title.png" />
+      </div>
+
+      <img style="width: 100%; height: auto" src="/assets/n-land-slide-1.png" />
+
+      <div class="n-land__question">
+        <img src="/assets/question.png" />
+      </div>
+
+      <div class="question">
+        <div class="question__container">
+          <!--  QUESTION ONE -->
+          <div class="question__first">
+            <span class="question__text">
+              ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
+              นอกจากคุณแล้ว ยังพบว่ามี<br />
+              คนอื่นอีกมากมาย ถ้าหาก<br />
+              ผู้ชนะมีได้ 1 คน...<br />
+              คุณคิดว่าคนคนนั้นจะเป็นใคร ?
+            </span>
+
+            <div class="question__answer active">ตัวฉัน</div>
+
+            <div class="question__answer">คนอื่น</div>
+          </div>
+
+          <!--  QUESTION TWO -->
+          <div class="question__second">
+            <span class="question__text">
+              คุณได้เพื่อนในยามคับขัน ในตอนที่<br />
+              กำลังหาทางออก จู่ๆ เพื่อนกลับ<br />
+              โดนพิษทำให้กลายเป็นบริวารของ<br />
+              ปีศาจ สุดท้ายจึงหาทางออกไม่เจอ <br />
+              คุณคิดว่าปัญหานี้เกิดจากอะไร ?
+            </span>
+
+            <div class="question__answer">
+              เพื่อน<br />
+              คืออุปสรรค
+            </div>
+
+            <div class="question__answer">
+              ปีศาจนั้น<br />
+              ร้ายกาจเกินไป
+            </div>
+          </div>
+
+          <!--  QUESTION THREE -->
+          <div class="question__third">
+            <span class="question__text">
+              หนทางชนะอาจมีอยู่ทางเดียว คือ<br />
+              การรวมพลังของทุกคนไว้ที่ 1 คน <br />
+              เพื่อให้มีพลังที่เหนือกว่าปีศาจ<br />
+              และคุณคือคนที่เก่งที่สุดในตอนนี้ <br />
+              คุณจะเลือกทำ หรือไม่ทำ ?
+            </span>
+
+            <div class="question__answer">ทำ<br />โดยนำพลังมาไว้ที่ตัวเอง</div>
+
+            <div class="question__answer">
+              ไม่<br />
+              ลองฟังความเห็นคนอื่นก่อน
+            </div>
+          </div>
         </div>
+      </div>
 
-        <img src="/assets/n-land-slide-1.png" />
-
-        <div style="display: flex; justify-content: center; padding: 4rem">
-          <img src="/assets/question.png" />
-        </div>
+      <div class="ready-container">
+        <video
+          style="width: 100%; height: auto"
+          autoplay
+          muted
+          loop
+          class="video-text"
+        >
+          <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
+        </video>
 
         <div
           style="
-            background-image: url('/assets/bg-n-land-question.png');
-            background-repeat: no-repeat;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           "
         >
-          <div style="display: flex; flex-direction: column">
-            <!--  QUESTION ONE -->
-            <div style="margin-top: 250px; margin-left: 10%">
-              <span
-                style="
-                  display: block;
-                  font-size: 2rem;
-                  color: white;
-                  /* padding-bottom: 1rem; */
-                  margin-bottom: 5rem;
-                  margin-left: 3rem;
-                "
-              >
-                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
-                นอกจากคุณแล้ว ยังพบว่ามี<br />
-                คนอื่นอีกมากมาย ถ้าหาก<br />
-                ผู้ชนะมีได้ 1 คน...<br />
-                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
-              </span>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                  margin-bottom: 1rem;
-                "
-              >
-                ตัวฉัน
-              </div>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                "
-              >
-                คนอื่น
-              </div>
-            </div>
-
-            <!--  QUESTION TWO -->
-            <div style="margin-top: 400px; margin-left: 10%">
-              <span
-                style="
-                  display: block;
-                  font-size: 2rem;
-                  color: white;
-                  /* padding-bottom: 1rem; */
-                  margin-bottom: 5rem;
-                  margin-left: 3rem;
-                "
-              >
-                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
-                นอกจากคุณแล้ว ยังพบว่ามี<br />
-                คนอื่นอีกมากมาย ถ้าหาก<br />
-                ผู้ชนะมีได้ 1 คน...<br />
-                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
-              </span>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                  margin-bottom: 1rem;
-                "
-              >
-                ตัวฉัน
-              </div>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                "
-              >
-                คนอื่น
-              </div>
-            </div>
-
-            <!--  QUESTION THREE -->
-            <div style="margin-top: 450px; margin-left: 10%">
-              <span
-                style="
-                  display: block;
-                  font-size: 2rem;
-                  color: white;
-                  /* padding-bottom: 1rem; */
-                  margin-bottom: 5rem;
-                  margin-left: 3rem;
-                "
-              >
-                ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
-                นอกจากคุณแล้ว ยังพบว่ามี<br />
-                คนอื่นอีกมากมาย ถ้าหาก<br />
-                ผู้ชนะมีได้ 1 คน...<br />
-                คุณคิดว่าคนคนนั้นจะเป็นใคร ?
-              </span>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                  margin-bottom: 1rem;
-                "
-              >
-                ตัวฉัน
-              </div>
-
-              <div
-                style="
-                  background-image: url(/assets/button-question.png);
-                  height: 170px;
-                  width: 500px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 3rem;
-                  background-repeat: no-repeat;
-                "
-              >
-                คนอื่น
-              </div>
-            </div>
-          </div>
+          <img src="assets/icon-ready.png" width="900" />
+          <img id="go" src="assets/button-go.png" width="500" />
         </div>
-
-        <div class="ready-container">
-          <video autoplay muted loop class="video-text">
-            <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
-          </video>
-
-          <div
-            style="
-              height: 70vh;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            "
-          >
-            <img src="assets/icon-ready.png" width="900" />
-            <img id="go" src="assets/button-go.png" width="500" />
-          </div>
-          <video autoplay muted loop class="video-text">
-            <source src="assets/bg-footer.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video
+          style="width: 100%; height: auto"
+          autoplay
+          muted
+          loop
+          class="video-text"
+        >
+          <source src="assets/bg-footer.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   </body>
