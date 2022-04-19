@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("assets/bg-black.gif");
+  background-image: url("/assets/bg-black.gif");
   overflow-x: hidden;
 }
 

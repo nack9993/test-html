@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("assets/bg-black.gif");
+  background-image: url("/assets/bg-black.gif");
   overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .souvenir {
   position: relative;
-  background-image: url("assets/bg-grey.gif");
+  background-image: url("/assets/bg-grey.gif");
 }
 
 .souvenir-container {

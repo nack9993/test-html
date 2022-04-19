@@ -1,9 +1,8 @@
 const toggle = document.getElementById("toggleMenu");
-const start = document.getElementById("start");
 
 const route = {
   home: "/",
-  preface: "landing",
+  preface: "Preface",
   nLand: "nLand",
   mLand: "mLand",
   pLand: "pLand",
@@ -28,11 +27,5 @@ if (toggle) {
       nav.style.pointerEvents = "none";
       navModal.classList.remove("active");
     }
-  });
-}
-
-if (start) {
-  start.addEventListener("click", () => {
-    window.location.href = `${route["preface"]}.html`;
   });
 }

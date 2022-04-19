@@ -19,6 +19,10 @@ const closeButton = document.getElementById("close");
 const goButton = document.getElementById("go");
 const characterModal = document.getElementById("character-modal");
 
+$(document).ready(function () {
+  $("#navbar").load("/components/navbar.html");
+});
+
 if (document.readyState === "complete") {
   console.log("GO");
   // The page is fully loaded

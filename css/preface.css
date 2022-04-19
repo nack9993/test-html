@@ -1,5 +1,5 @@
 .landing {
-  background-image: url("assets/bg-black.gif");
+  background-image: url("/assets/bg-black.gif");
 }
 
 .landing-container {
@@ -119,7 +119,7 @@ li.active {
   top: 275px;
 }
 .password {
-  background-image: url("assets/password-symbol.png");
+  background-image: url("/assets/password-symbol.png");
   opacity: 0;
   width: 50px;
   height: 70px;
@@ -143,33 +143,33 @@ li.active {
 }
 
 #cloud {
-  background-image: url("assets/button-cloud.png");
+  background-image: url("/assets/button-cloud.png");
   font-size: 2rem;
 }
 
 #cloud.active {
-  background-image: url("assets/button-cloud-active.png");
+  background-image: url("/assets/button-cloud-active.png");
 }
 
 #fire {
   position: relative;
   top: -15px;
-  background-image: url("assets/button-fire.png");
+  background-image: url("/assets/button-fire.png");
 }
 
 #fire.active {
-  background-image: url("assets/button-fire-active.png");
+  background-image: url("/assets/button-fire-active.png");
 }
 
 #square {
   position: relative;
   top: 5px;
   left: 5px;
-  background-image: url("assets/button-square.png");
+  background-image: url("/assets/button-square.png");
 }
 
 #square.active {
-  background-image: url("assets/button-square-active.png");
+  background-image: url("/assets/button-square-active.png");
 }
 
 #go {

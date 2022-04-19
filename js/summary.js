@@ -13,8 +13,8 @@ enter.addEventListener("click", () => {
   const card = document.getElementById("card");
   card.src = `/assets/${cardList[currentCard]}-charm.png`;
 
-  const actions = document.getElementById('actions');
-  actions.classList.add('disabled')
+  const actions = document.getElementById("actions");
+  actions.classList.add("disabled");
 });
 
 function changeCard() {
@@ -30,3 +30,7 @@ function changeCard() {
   inputPassword.setAttribute("key", cardList[currentCard]);
   console.log(inputPassword.getAttribute("key"));
 }
+
+$(document).ready(function () {
+  $("#navbar").load("/components/navbar.html");
+});
