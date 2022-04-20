@@ -81,10 +81,10 @@
               คุณจะเลือกทำ หรือไม่ทำ ?
             </span>
 
-            <div class="question__answer">ทำ<br />โดยนำพลังมาไว้ที่ตัวเอง</div>
+            <div class="question__answer"> <div class="question__answer--large">ทำ</div>โดยนำพลังมาไว้ที่ตัวเอง</div>
 
             <div class="question__answer">
-              ไม่<br />
+              <div class="question__answer--large">ไม่</div>
               ลองฟังความเห็นคนอื่นก่อน
             </div>
           </div>
@@ -111,8 +111,12 @@
             align-items: center;
           "
         >
-          <img src="assets/icon-ready.png" width="900" />
-          <img id="go" src="assets/button-go.png" width="500" />
+          <img src="/assets/your-result.png" width="600" />
+
+          <div class="show-button" >
+            Show
+          </div>
+
         </div>
         <video
           style="width: 100%; height: auto"
@@ -120,6 +124,7 @@
           muted
           loop
           class="video-text"
+
         >
           <source src="assets/bg-footer.mp4" type="video/mp4" />
         </video>

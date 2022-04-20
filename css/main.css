@@ -89,11 +89,12 @@ body {
   top: 11rem;
   z-index: 3;
 }
-hr {
+
+ hr {
   color: black;
   background-color: black;
   height: 3px;
-}
+ }
 
 .modal {
   display: none;
@@ -111,4 +112,9 @@ hr {
 
 .modal.active {
   display: block;
+}
+
+.video-bg {
+  width: 100%;
+   height: auto;
 }

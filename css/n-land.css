@@ -51,6 +51,7 @@
 }
 
 .question__answer {
+  cursor: pointer;
   text-align: center;
   background-image: url(/assets/button-question.png);
   height: 170px;
@@ -58,12 +59,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 2.5rem;
   background-repeat: no-repeat;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
+.question__answer--large {
+  font-size: 3rem;
+}
+
+
+
 .question__answer.active {
   background-image: url(/assets/button-question-active.png);
+}
+
+.show-button {
+  margin-top: -30px;
+  cursor: pointer;
+  font-family: Typographergotisch;
+  background-image: url("/assets/button.png");
+  width: 380px;
+  height: 90px;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
