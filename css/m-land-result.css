@@ -1,0 +1,35 @@
+body {
+  background-image: url("assets/bg-black.gif");
+  overflow-x: hidden;
+}
+
+.result-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -10rem;
+  z-index: 1;
+}
+
+.result-card-bg {
+  position: absolute;
+  top: 365px;
+  z-index: 0;
+}
+
+.result-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -85px;
+}
+
+.result-button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.video-text {
+  pointer-events: none;
+}

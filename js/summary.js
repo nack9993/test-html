@@ -1,7 +1,9 @@
-const clickcard = document.getElementById("clickcard");
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
 const enter = document.getElementById("enter");
 
-// clickcard.addEventListener("click", () => changeCard());
+leftArrow.addEventListener("click", () => changeCard());
+rightArrow.addEventListener("click", () => changeCard())
 
 const cardList = ["n", "m", "p"];
 let currentCard = 0;
@@ -33,4 +35,8 @@ function changeCard() {
 
 $(document).ready(function () {
   $("#navbar").load("/components/navbar.html");
+
+  $('#contact').click(() =>  {
+    window.location.href = 'contact.html'
+  })
 });

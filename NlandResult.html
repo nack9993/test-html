@@ -2,23 +2,39 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/" />
+    <link rel="stylesheet" href="/css/n-land-result.css" />
+    <script type="text/javascript" src="/js/n-land-result.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>N Land result</title>
   </head>
 
   <body>
-    <video autoplay muted loop class="video-text">
-      <source src="/assets/bg-video-text.mp4" type="video/mp4" />
-    </video>
-    <div class="result-card">
-      <img src="/assets/n-win.png" />
-    </div>
-    <img class="result-card-bg" src="/assets/bg-n-win.png" />
-    <div class="result-footer">
-      <img style="position: absolute" src="/assets/play-again.png" />
+    <div class="page-container">
+      <!-- NAV -->
+      <div id="navbar"></div>
+
       <video autoplay muted loop class="video-text">
-        <source src="/assets/bg-footer.mp4" type="video/mp4" />
+        <source src="/assets/bg-header-n-land.mp4" type="video/mp4" />
       </video>
+      <div class="result-card">
+        <img id="result" src="/assets/n-win.png" />
+      </div>
+      <img id="bg" class="result-card-bg" src="/assets/bg-n-land-win.png" />
+      <div class="result-footer">
+        <img
+          id="lose-button"
+          class="result-button"
+          src="/assets/play-again.png"
+        />
+        <img
+          id="win-button"
+          class="result-button"
+          src="/assets/button-continue-m-land.png"
+        />
+        <video autoplay muted loop class="video-text">
+          <source src="/assets/bg-footer-n-land.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   </body>
 </html>
