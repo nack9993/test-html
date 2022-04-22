@@ -45,9 +45,11 @@
               คุณคิดว่าคนคนนั้นจะเป็นใคร ?
             </span>
 
-            <div class="question__answer active">ตัวฉัน</div>
+            <div id="first_answer">
+              <div id="a" class="question__answer active">ตัวฉัน</div>
 
-            <div class="question__answer">คนอื่น</div>
+              <div id="b" class="question__answer">คนอื่น</div>
+            </div>
           </div>
 
           <!--  QUESTION TWO -->
@@ -60,14 +62,16 @@
               คุณคิดว่าปัญหานี้เกิดจากอะไร ?
             </span>
 
-            <div class="question__answer">
-              เพื่อน<br />
-              คืออุปสรรค
-            </div>
+            <div id="second_answer">
+              <div id="a" class="question__answer">
+                เพื่อน<br />
+                คืออุปสรรค
+              </div>
 
-            <div class="question__answer">
-              ปีศาจนั้น<br />
-              ร้ายกาจเกินไป
+              <div id="b" class="question__answer">
+                ปีศาจนั้น<br />
+                ร้ายกาจเกินไป
+              </div>
             </div>
           </div>
 
@@ -81,11 +85,16 @@
               คุณจะเลือกทำ หรือไม่ทำ ?
             </span>
 
-            <div class="question__answer"> <div class="question__answer--large">ทำ</div>โดยนำพลังมาไว้ที่ตัวเอง</div>
+            <div id="third_answer">
+              <div id="a" class="question__answer">
+                <div class="question__answer--large">ทำ</div>
+                โดยนำพลังมาไว้ที่ตัวเอง
+              </div>
 
-            <div class="question__answer">
-              <div class="question__answer--large">ไม่</div>
-              ลองฟังความเห็นคนอื่นก่อน
+              <div id="b" class="question__answer">
+                <div class="question__answer--large">ไม่</div>
+                ลองฟังความเห็นคนอื่นก่อน
+              </div>
             </div>
           </div>
         </div>
@@ -113,10 +122,7 @@
         >
           <img src="/assets/your-result.png" width="600" />
 
-          <div class="show-button" >
-            Show
-          </div>
-
+          <div id="show" class="show-button">Show</div>
         </div>
         <video
           style="width: 100%; height: auto"
@@ -124,7 +130,6 @@
           muted
           loop
           class="video-text"
-
         >
           <source src="assets/bg-footer.mp4" type="video/mp4" />
         </video>
