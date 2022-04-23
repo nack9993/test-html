@@ -16,11 +16,17 @@ $(document).ready(function () {
 
     for (var i = 0; i < answer.children.length; i++) {
       const choice = answer.children[i];
+      console.log(key);
 
       choice.addEventListener("click", () => {
+        if (choice.id === "a") {
+          $(`#${key} #a`).addClass("active");
+          $(`#${key} #b`).removeClass("active");
+        } else {
+          $(`#${key} #b`).addClass("active");
+          $(`#${key} #a`).removeClass("active");
+        }
         answerList[key] = choice.id;
-        console.log("selected");
-        console.log(answerList);
       });
     }
   });
@@ -48,20 +54,28 @@ $(document).ready(function () {
 
       if (lose_two_directly) {
         alert("GO LOSE B Directly");
+        localStorage.setItem("n-land", "lose-2");
+        window.location.href = "NlandResult.html";
         return;
       }
 
       if (lose_one) {
         alert("GO LOSE A");
+        localStorage.setItem("n-land", "lose-1");
+        window.location.href = "NlandResult.html";
         return;
       }
 
       if (lose_two) {
         alert("GO LOSE B");
+        localStorage.setItem("n-land", "lose-2");
+        window.location.href = "NlandResult.html";
         return;
       }
 
       alert("WIN");
+      localStorage.setItem("n-land", "win");
+      window.location.href = "NlandResult.html";
 
       console.log(lose_one);
     }
