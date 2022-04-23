@@ -90,11 +90,11 @@ body {
   z-index: 3;
 }
 
- hr {
+hr {
   color: black;
   background-color: black;
   height: 3px;
- }
+}
 
 .modal {
   display: none;
@@ -116,5 +116,32 @@ body {
 
 .video-bg {
   width: 100%;
-   height: auto;
+  height: auto;
+}
+
+.slider ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+  list-style-position: none;
+}
+
+.slider li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 1rem;
+  background-color: gray;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.slider li.active {
+  background-color: white;
+}
+
+.video-text {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
 }

@@ -18,3 +18,17 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+.contact-container {
+  flex-direction: column;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card-contact {
+  align-self: end
+}

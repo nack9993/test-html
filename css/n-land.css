@@ -70,8 +70,6 @@
   font-size: 3rem;
 }
 
-
-
 .question__answer.active {
   background-image: url(/assets/button-question-active.png);
 }
@@ -86,6 +84,27 @@
   background-repeat: no-repeat;
   font-size: 3rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider {
+  display: none;
+}
+
+.image-slider.active {
+  display: block;
+}
+
+.slider-container {
+  position: relative;
+  top: -8px;
+}
+
+.result-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="css/n-land.css" />
-    <script type="text/javascript" src="/js/nland.js" defer></script>
+    <script type="text/javascript" src="/js/n-land.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Nland Page</title>
   </head>
@@ -14,23 +14,35 @@
       <div id="navbar"></div>
 
       <div class="n-land">
-        <video
-          style="width: 100%; height: auto"
-          autoplay
-          muted
-          loop
-          class="video-text"
-        >
+        <video autoplay muted loop class="video-text">
           <source src="assets/bg-n-land-text.mp4" type="video/mp4" />
         </video>
 
         <img class="n-land__title" src="/assets/n-land-title.png" />
       </div>
 
-      <img style="width: 100%; height: auto" src="/assets/n-land-slide-1.png" />
+      <div class="slider-container">
+        <img
+          id="first-slide"
+          class="image-slider active"
+          src="/assets/n-land-slide-1.png"
+        />
+        <img
+          id="second-slide"
+          class="image-slider"
+          src="/assets/n-land-slide-2.png"
+        />
+
+        <div class="slider">
+          <ul>
+            <li id="slide1" class="active"></li>
+            <li id="slide2"></li>
+          </ul>
+        </div>
+      </div>
 
       <div class="n-land__question">
-        <img src="/assets/question.png" />
+        <img src="/assets/question-n-land.png" />
       </div>
 
       <div class="question">
@@ -101,36 +113,16 @@
       </div>
 
       <div class="ready-container">
-        <video
-          style="width: 100%; height: auto"
-          autoplay
-          muted
-          loop
-          class="video-text"
-        >
+        <video autoplay muted loop class="video-text">
           <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
         </video>
 
-        <div
-          style="
-            height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          "
-        >
+        <div class="result-container">
           <img src="/assets/your-result.png" width="600" />
 
           <div id="show" class="show-button">Show</div>
         </div>
-        <video
-          style="width: 100%; height: auto"
-          autoplay
-          muted
-          loop
-          class="video-text"
-        >
+        <video autoplay muted loop class="video-text">
           <source src="assets/bg-footer.mp4" type="video/mp4" />
         </video>
       </div>

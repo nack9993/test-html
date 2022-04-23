@@ -1,11 +1,3 @@
-// PAPER
-const paper2 = document.getElementById("paper2");
-const paper3 = document.getElementById("paper3");
-
-const slide1 = document.getElementById("slide1");
-const slide2 = document.getElementById("slide2");
-const slide3 = document.getElementById("slide3");
-
 // CHARACTER
 const cloud = document.querySelectorAll("#cloud");
 const fire = document.querySelectorAll("#fire");
@@ -28,31 +20,35 @@ if (document.readyState === "complete") {
   // The page is fully loaded
 }
 
-slide1.addEventListener("click", (e) => {
-  slide1.classList.add("active");
-  slide2.classList.remove("active");
-  slide3.classList.remove("active");
+// SLIDER SECTION
+const slider = [
+  { id: "#slide1", imageId: "#paper1" },
+  { id: "#slide2", imageId: "#paper2" },
+  { id: "#slide3", imageId: "#paper3" },
+];
 
-  paper2.classList.remove("active");
-  paper3.classList.remove("active");
-});
+slider.forEach(({ id }, index) => {
+  $(id).click(() => {
+    const clickedIndex = index + 1;
 
-slide2.addEventListener("click", (e) => {
-  slide1.classList.remove("active");
-  slide2.classList.add("active");
-  slide3.classList.remove("active");
+    $(`#slide${clickedIndex}`).addClass("active");
 
-  paper2.classList.add("active");
-  paper3.classList.remove("active");
-});
+    slider.map((item, key) => {
+      const childKey = key + 1;
 
-slide3.addEventListener("click", (e) => {
-  slide1.classList.remove("active");
-  slide2.classList.remove("active");
-  slide3.classList.add("active");
+      // Remove all the slide button that not active
+      if (clickedIndex !== childKey) {
+        $(`#slide${childKey}`).removeClass("active");
+      }
 
-  paper2.classList.add("active");
-  paper3.classList.add("active");
+      if (clickedIndex < childKey) {
+        $(item.imageId).removeClass("active");
+        return;
+      }
+
+      $(item.imageId).addClass("active");
+    });
+  });
 });
 
 let count = 0;
@@ -87,66 +83,17 @@ elementArray.forEach((element) => {
 
 enterButton.addEventListener("click", () => {
   if (count < 3) return;
-  console.log(elementList);
 
-  let firstElement = "";
-  let cloud = 0;
-  let fire = 0;
-  let square = 0;
-
-  elementList.forEach((item, index) => {
-    if (!index) {
-      firstElement = item;
-    }
-
-    if (item === "cloud") {
-      cloud = cloud + 1;
-    }
-
-    if (item === "fire") {
-      fire = fire + 1;
-    }
-
-    if (item === "square") {
-      square = square + 1;
-    }
-  });
-
-  console.log(cloud, fire, square);
-
-  let selectedCharacter = "";
-
-  if (cloud === 1 && fire === 1 && square === 1) {
-    selectedCharacter = firstElement;
-  }
-
-  if (cloud >= 2) {
-    selectedCharacter = "cloud";
-  }
-
-  if (fire >= 2) {
-    selectedCharacter = "fire";
-  }
-
-  if (square >= 2) {
-    selectedCharacter = "square";
-  }
-
-  console.log(selectedCharacter);
+  const monster = getMonster(elementList);
 
   // OPEN MODAL
   const character = document.getElementById("character");
-  character.src = `/assets/${selectedCharacter}_character.png`;
+  character.src = `/assets/${monster}_character.png`;
   characterModal.classList.add("active");
 
   //RESET
-  firstElement = "";
-  cloud = 0;
-  fire = 0;
-  square = 0;
   count = 0;
   elementList = [];
-  selectedCharacter = "";
   resetPassword();
 });
 
@@ -155,7 +102,7 @@ closeButton.addEventListener("click", () => {
 });
 
 goButton.addEventListener("click", () => {
-  console.log("Go");
+  window.location.href = 'Nland.html'
 });
 
 function resetPassword() {
@@ -170,7 +117,42 @@ function resetPassword() {
   });
 }
 
-function checkLoading() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("page").style.display = "block";
+
+function getMonster(answerList) {
+  const result = {
+    firstElement: "",
+    cloud: 0,
+    fire: 0,
+    square: 0,
+  };
+
+  answerList.forEach((item, index) => {
+    if (!index) {
+      result.firstElement = item;
+    }
+
+    result[item] = result[item] + 1;
+  });
+
+  let selectedCharacter = "";
+
+  if (result.cloud === 1 && result.fire === 1 && result.square === 1) {
+    selectedCharacter = result.firstElement;
+  }
+
+  Object.entries(result).forEach((item) => {
+    const [name, key] = item;
+
+    if (key >= 2) {
+      selectedCharacter = name;
+      return;
+    }
+  });
+
+  result.firstElement = "";
+  result.cloud = 0;
+  result.fire = 0;
+  result.square = 0;
+
+  return selectedCharacter;
 }

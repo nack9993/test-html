@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#bg").attr("src", "/assets/bg-n-land-lose.png");
     $("#win-button").hide();
     $("#lose-button").click(() => {
-      console.log("Hi");
+      window.location.href = "NLand.html";
     });
   }
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
     $("#bg").attr("src", "/assets/bg-n-land-lose.png");
     $("#win-button").hide();
     $("#lose-button").click(() => {
-      console.log("Hi");
+      window.location.href = "NLand.html";
     });
   }
 });

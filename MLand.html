@@ -2,11 +2,130 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/n-land.css" />
+    <script type="text/javascript" src="/js/m-land.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Nland Page</title>
+    <title>Mland Page</title>
   </head>
 
   <body>
-    <!-- NAV -->
+    <div class="page-container">
+      <!-- NAV "-->
+      <div id="navbar"></div>
+
+      <div class="n-land">
+        <video autoplay muted loop class="video-text">
+          <source src="assets/bg-n-land-text.mp4" type="video/mp4" />
+        </video>
+
+        <img class="n-land__title" src="/assets/n-land-title.png" />
+      </div>
+
+      <div class="slider-container">
+        <img
+          id="first-slide"
+          class="image-slider active"
+          src="/assets/m-land-slide-1.png"
+        />
+        <img
+          id="second-slide"
+          class="image-slider"
+          src="/assets/m-land-slide-2.png"
+        />
+
+        <div class="slider">
+          <ul>
+            <li id="slide1" class="active"></li>
+            <li id="slide2"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="n-land__question">
+        <img src="/assets/question-n-land.png" />
+      </div>
+
+      <div class="question">
+        <div class="question__container">
+          <!--  QUESTION ONE -->
+          <div class="question__first">
+            <span class="question__text">
+              ขณะที่ก้าวเข้ามาในดินแดนนี้<br />
+              นอกจากคุณแล้ว ยังพบว่ามี<br />
+              คนอื่นอีกมากมาย ถ้าหาก<br />
+              ผู้ชนะมีได้ 1 คน...<br />
+              คุณคิดว่าคนคนนั้นจะเป็นใคร ?
+            </span>
+
+            <div id="first_answer">
+              <div id="a" class="question__answer">ตัวฉัน</div>
+
+              <div id="b" class="question__answer">คนอื่น</div>
+            </div>
+          </div>
+
+          <!--  QUESTION TWO -->
+          <div class="question__second">
+            <span class="question__text">
+              คุณได้เพื่อนในยามคับขัน ในตอนที่<br />
+              กำลังหาทางออก จู่ๆ เพื่อนกลับ<br />
+              โดนพิษทำให้กลายเป็นบริวารของ<br />
+              ปีศาจ สุดท้ายจึงหาทางออกไม่เจอ <br />
+              คุณคิดว่าปัญหานี้เกิดจากอะไร ?
+            </span>
+
+            <div id="second_answer">
+              <div id="a" class="question__answer">
+                เพื่อน<br />
+                คืออุปสรรค
+              </div>
+
+              <div id="b" class="question__answer">
+                ปีศาจนั้น<br />
+                ร้ายกาจเกินไป
+              </div>
+            </div>
+          </div>
+
+          <!--  QUESTION THREE -->
+          <div class="question__third">
+            <span class="question__text">
+              หนทางชนะอาจมีอยู่ทางเดียว คือ<br />
+              การรวมพลังของทุกคนไว้ที่ 1 คน <br />
+              เพื่อให้มีพลังที่เหนือกว่าปีศาจ<br />
+              และคุณคือคนที่เก่งที่สุดในตอนนี้ <br />
+              คุณจะเลือกทำ หรือไม่ทำ ?
+            </span>
+
+            <div id="third_answer">
+              <div id="a" class="question__answer">
+                <div class="question__answer--large">ทำ</div>
+                โดยนำพลังมาไว้ที่ตัวเอง
+              </div>
+
+              <div id="b" class="question__answer">
+                <div class="question__answer--large">ไม่</div>
+                ลองฟังความเห็นคนอื่นก่อน
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ready-container">
+        <video autoplay muted loop class="video-text">
+          <source src="assets/bg-video-text-left.mp4" type="video/mp4" />
+        </video>
+
+        <div class="result-container">
+          <img src="/assets/your-result.png" width="600" />
+
+          <div id="show" class="show-button">Show</div>
+        </div>
+        <video autoplay muted loop class="video-text">
+          <source src="assets/bg-footer.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
   </body>
 </html>

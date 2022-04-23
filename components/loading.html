@@ -1,28 +1,28 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body>
+  <div class="loading">
+    LOADING . . .
     <div class="loading-bar"></div>
-  </body>
+  </div>
 
   <style>
-    body {
+    .loading {
+      color: white;
+      font-size: 3rem;
       width: 100vw;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("/assets/bg-grey.gif");
+      flex-direction: column;
+      background-image: url("/assets/bg-black.gif");
     }
     div.loading-bar {
       width: 200px;
       height: 20px;
-      background-color: #d6cec2;
+      background-color: #DACC8E;
       border-radius: 10px;
       margin-top: 25px;
       overflow: hidden;
@@ -33,10 +33,11 @@
       width: 100px;
       height: 20px;
       position: absolute;
-      background-color: #0074b4;
+      background-color: #ffffff;
       transform: translateX(-20px);
       animation: loop 2s ease infinite;
     }
+
     @keyframes loop {
       0%,
       100% {
