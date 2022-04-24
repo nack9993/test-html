@@ -49,7 +49,6 @@ $(document).ready(function () {
       const lose_two_directly = answerList.third_answer === "a";
 
       if (lose_two_directly) {
-        alert("GO LOSE B Directly");
         localStorage.setItem("n-land", "lose-2");
         window.location.href = "NlandResult.html";
         return;

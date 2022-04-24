@@ -15,11 +15,6 @@ $(document).ready(function () {
   $("#navbar").load("/components/navbar.html");
 });
 
-if (document.readyState === "complete") {
-  console.log("GO");
-  // The page is fully loaded
-}
-
 // SLIDER SECTION
 const slider = [
   { id: "#slide1", imageId: "#paper1" },
@@ -102,7 +97,7 @@ closeButton.addEventListener("click", () => {
 });
 
 goButton.addEventListener("click", () => {
-  window.location.href = 'Nland.html'
+  window.location.href = 'NLand.html'
 });
 
 function resetPassword() {

@@ -1,28 +1,36 @@
 $(document).ready(function () {
   $("#navbar").load("/components/navbar.html");
 
-  // // IF WIN
-  $("#result").attr("src", "/assets/p-land-win.png");
-  $("#bg").attr("src", "/assets/bg-p-land-win.png");
-  $("#lose-button").hide();
+  const result = localStorage.getItem("m-land");
 
-  $("#win-button").click(() => {
-    window.location.href = "Summary.html";
-  });
+  // IF WIN
+  if (result === "win") {
+    $("#result").attr("src", "/assets/m-land-win.png");
+    $("#bg").attr("src", "/assets/bg-m-land-win.png");
+    $("#lose-button").hide();
 
-  // // IF LOSE 1
-  // $("#result").attr("src", "/assets/p-land-lose-1.png");
-  // $("#bg").attr("src", "/assets/bg-p-land-lose.png");
-  // $("#win-button").hide();
-  // $("#lose-button").click(() => {
-  //   console.log("Hi");
-  // });
+    $("#win-button").click(() => {
+      window.location.href = "Summary.html";
+    });
+  }
 
-  // IF LOSE 2
-  // $("#result").attr("src", "/assets/p-land-lose-2.png");
-  // $("#bg").attr("src", "/assets/bg-p-land-lose.png");
-  // $("#win-button").hide();
-  // $("#lose-button").click(() => {
-  //   console.log("Hi");
-  // });
+  if (result === "lose-1") {
+    // IF LOSE 1
+    $("#result").attr("src", "/assets/m-land-lose-1.png");
+    $("#bg").attr("src", "/assets/bg-m-land-lose.png");
+    $("#win-button").hide();
+    $("#lose-button").click(() => {
+      window.location.href = "NLand.html";
+    });
+  }
+
+  if (result === "lose-2") {
+    // IF LOSE 2
+    $("#result").attr("src", "/assets/m-land-lose-2.png");
+    $("#bg").attr("src", "/assets/bg-m-land-lose.png");
+    $("#win-button").hide();
+    $("#lose-button").click(() => {
+      window.location.href = "ummary.html";
+    });
+  }
 });

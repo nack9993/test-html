@@ -102,3 +102,21 @@ body {
 #contact {
   cursor: pointer;
 }
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow-left {
+  right: 40px;
+}
+
+.arrow-right {
+  left: 40px;
+}
+
+.follow-button {
+  cursor: pointer;
+}

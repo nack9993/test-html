@@ -3,7 +3,7 @@ const rightArrow = document.getElementById("right-arrow");
 const enter = document.getElementById("enter");
 
 leftArrow.addEventListener("click", () => changeCard());
-rightArrow.addEventListener("click", () => changeCard())
+rightArrow.addEventListener("click", () => changeCard());
 
 const cardList = ["n", "m", "p"];
 let currentCard = 0;
@@ -35,8 +35,11 @@ function changeCard() {
 
 $(document).ready(function () {
   $("#navbar").load("/components/navbar.html");
+  $("#follow-button").click(() => {
+    window.location.href = "https://www.instagram.com/devilmonstergame/";
+  });
 
-  $('#contact').click(() =>  {
-    window.location.href = 'contact.html'
-  })
+  $("#contact").click(() => {
+    window.location.href = "contact.html";
+  });
 });

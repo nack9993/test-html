@@ -1,15 +1,5 @@
 const toggle = document.getElementById("toggleMenu");
 
-const route = {
-  home: "/",
-  preface: "Preface",
-  nLand: "nLand",
-  mLand: "mLand",
-  pLand: "pLand",
-  summary: "summary",
-  contact: "contact",
-};
-
 let isOpen = false;
 
 if (toggle) {
@@ -29,3 +19,10 @@ if (toggle) {
     }
   });
 }
+
+const Routes = $(".nav-list a");
+Routes.each((_, value) => {
+  if (value.href === $(location).attr("href")) {
+    $(value).addClass("active");
+  }
+});
