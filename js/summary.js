@@ -11,15 +11,16 @@ let currentCard = 0;
 enter.addEventListener("click", () => {
   const inputPassword = document.getElementById("password");
   console.log(inputPassword.value);
+  console.log(cardList[currentCard]);
 
-  if (inputPassword.value === cardList[currentCard]) {
+  if (String(inputPassword.value).toLowerCase() === cardList[currentCard]) {
     const card = document.getElementById("card");
     card.src = `/assets/${cardList[currentCard]}-charm.png`;
 
     const actions = document.getElementById("actions");
     actions.classList.add("disabled");
   } else {
-    alert("NOPE");
+    alert("Not correct");
   }
 });
 

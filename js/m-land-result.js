@@ -20,7 +20,7 @@ $(document).ready(function () {
     $("#bg").attr("src", "/assets/bg-m-land-lose.png");
     $("#win-button").hide();
     $("#lose-button").click(() => {
-      window.location.href = "NLand.html";
+      window.location.href = "MLand.html";
     });
   }
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
     $("#bg").attr("src", "/assets/bg-m-land-lose.png");
     $("#win-button").hide();
     $("#lose-button").click(() => {
-      window.location.href = "NLand.html";
+      window.location.href = "MLand.html";
     });
   }
 });
