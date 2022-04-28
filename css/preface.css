@@ -25,6 +25,10 @@
   justify-content: center;
 }
 
+.paper {
+  width: 100%;
+}
+
 #paper2,
 #paper3 {
   opacity: 0;
