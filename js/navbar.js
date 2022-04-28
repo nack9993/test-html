@@ -9,11 +9,11 @@ if (toggle) {
     isOpen = !isOpen;
 
     if (isOpen) {
-      toggleMenu.src = "assets/x.png";
+      toggleMenu.src = "assets/x-icon.png";
       nav.style.pointerEvents = "all";
       navModal.classList.add("active");
     } else {
-      toggleMenu.src = "assets/lll.png";
+      toggleMenu.src = "assets/menu-icon.png";
       nav.style.pointerEvents = "none";
       navModal.classList.remove("active");
     }
