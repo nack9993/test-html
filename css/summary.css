@@ -41,6 +41,7 @@ body {
 .souvenir {
   position: relative;
   background-image: url("/assets/bg-grey.gif");
+  height: 1080px;
 }
 
 .souvenir-container {

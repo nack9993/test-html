@@ -57,7 +57,10 @@ function changeCard(direction) {
 $(document).ready(function () {
   $("#navbar").load("/components/navbar.html");
   $("#follow-button").click(() => {
-    window.location.href = "https://www.instagram.com/devilmonstergame/";
+    window.open(
+      'https://www.instagram.com/devilmonstergame/',
+      '_blank' 
+    );
   });
 
   $("#contact").click(() => {
