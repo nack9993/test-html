@@ -39,11 +39,11 @@ $(document).ready(function () {
       alert("Not finished");
     } else {
       const lose_one = Object.values(answerList).every((x) => {
-        return x === "a";
+        return x === "b";
       });
 
       const lose_two = Object.values(answerList).every((x) => {
-        return x === "b";
+        return x === "a ";
       });
 
       const lose_two_directly = answerList.third_answer === "a";
