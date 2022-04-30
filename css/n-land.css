@@ -25,4 +25,8 @@
     width: 40%;
     left: 30%;
   }
+
+  .ready-container {
+    margin-top: -40px;
+  }
 }
