@@ -34,6 +34,12 @@ body {
   bottom: 100px;
 }
 
+@media only screen and (max-width: 1600px) {
+  .logo {
+    width: 30%;
+  }
+}
+
 @keyframes fadeInAnimation {
   0% {
     top: -100px;

@@ -12,6 +12,8 @@ body {
 }
 
 .result-card-bg {
+  width: 100%;
+  width: 100%;
   position: absolute;
   top: 365px;
   z-index: 0;
