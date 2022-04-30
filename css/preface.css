@@ -13,6 +13,11 @@
   justify-content: center;
 }
 
+.logo {
+  position: relative;
+  left: -120px;
+}
+
 .icon-preface {
   position: absolute;
   top: 130px;
@@ -25,8 +30,8 @@
   justify-content: center;
 }
 
-.paper {
-  width: 100%;
+#paper1 {
+  width: 80%;
 }
 
 #paper2,

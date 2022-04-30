@@ -1,0 +1,21 @@
+.p-land {
+  position: relative;
+}
+
+.p-land__title {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+}
+
+.p-land__question {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.question {
+  background-size: cover;
+  background-image: url("/assets/bg-p-land-question.png");
+  background-repeat: no-repeat;
+}

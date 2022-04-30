@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="css/m-land.css" />
+    <link rel="stylesheet" href="css/p-land.css" />
     <script type="text/javascript" src="/js/p-land.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Pland Page</title>
@@ -13,12 +13,12 @@
       <!-- NAV "-->
       <div id="navbar"></div>
 
-      <div class="m-land">
+      <div class="p-land">
         <video autoplay muted loop class="video-text">
           <source src="assets/bg-header-p-land.mp4" type="video/mp4" />
         </video>
 
-        <img class="m-land__title" src="/assets/m-land-title.png" />
+        <img class="p-land__title" src="/assets/p-land-title.png" />
       </div>
 
       <div class="slider-container">
@@ -41,8 +41,8 @@
         </div>
       </div>
 
-      <div class="m-land__question">
-        <img src="/assets/question-m-land.png" />
+      <div class="p-land__question">
+        <img src="/assets/question-p-land.png" />
       </div>
 
       <div class="question">
@@ -58,10 +58,13 @@
             </span>
 
             <div id="first_answer">
-              <div id="a" class="question__answer">ตั้งใจตามหาปีศาจ</div>
+              <div id="a" class="question__answer">
+                <div class="question__answer--large">ตั้งใจตามหาปีศาจ</div>
+              </div>
 
               <div id="b" class="question__answer">
-                รอดูลาดราว ค่อยตามหาทีหลัง
+                <div class="question__answer--large">รอดูลาดราว</div>
+                ค่อยตามหาทีหลัง
               </div>
             </div>
           </div>
@@ -77,7 +80,9 @@
             </span>
 
             <div id="second_answer">
-              <div id="a" class="question__answer">รีบทำลายมันทันที</div>
+              <div id="a" class="question__answer">
+                <div class="question__answer--large">รีบทำลายมันทันที</div>
+              </div>
 
               <div id="b" class="question__answer">
                 <div class="question__answer--large">ใช้เวลาคิดก่อน</div>
@@ -97,14 +102,13 @@
             </span>
 
             <div id="third_answer">
+
               <div id="a" class="question__answer">
-                <div class="question__answer--large">แก้แค้น</div>
-                มันก่อน
+                <div class="question__answer--large">แก้แค้นมันก่อน</div>
               </div>
 
               <div id="b" class="question__answer">
-                <div class="question__answer--large">ปล่อยไป</div>
-                และรีบหนี
+                <div class="question__answer--large">ปล่อยไปและรีบหนี</div>
               </div>
             </div>
           </div>
@@ -117,7 +121,7 @@
         </video>
 
         <div class="result-container">
-          <img src="/assets/your-result-m-land.png" width="600" />
+          <img src="/assets/your-result-p-land.png" width="600" />
 
           <div id="show" class="show-button">Show</div>
         </div>
