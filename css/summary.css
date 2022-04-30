@@ -41,7 +41,7 @@ body {
 .souvenir {
   position: relative;
   background-image: url("/assets/bg-grey.gif");
-  height: 1080px;
+  height: 100%;
 }
 
 .souvenir-container {
@@ -56,13 +56,17 @@ body {
 
 .souvenir-card {
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-actions {
   position: absolute;
   display: flex;
-  bottom: 13rem;
-  left: 31rem;
+  bottom: 28%;
+  left: 45%;
 }
 
 .card-actions.disabled {
@@ -111,11 +115,11 @@ body {
 }
 
 .arrow-left {
-  right: 40px;
+  right: -260px;
 }
 
 .arrow-right {
-  left: 40px;
+  left: -260px;
 }
 
 .follow-button {
