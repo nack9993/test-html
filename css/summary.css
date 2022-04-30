@@ -41,6 +41,8 @@ body {
 .souvenir {
   position: relative;
   background-image: url("/assets/bg-grey.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -115,13 +117,36 @@ body {
 }
 
 .arrow-left {
-  right: -260px;
+  right: -16%;
 }
 
 .arrow-right {
-  left: -260px;
+  left: -16%;
 }
 
 .follow-button {
   cursor: pointer;
+}
+
+.card-summary {
+  width: 60%;
+}
+
+.bg-souvenir {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .p-land__title {
+    width: 40%;
+    left: 30%;
+  }
+
+  .souvenir {
+    height: 100%;
+  }
+
+  .card-actions {
+    bottom: 25%;
+  }
 }
