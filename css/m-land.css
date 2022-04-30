@@ -15,7 +15,7 @@
 }
 
 .question {
-  background-size: cover;
+  background-size: 100%;
   background-image: url("/assets/bg-m-land-question.png");
   background-repeat: no-repeat;
 }
@@ -24,9 +24,5 @@
   .m-land__title {
     width: 40%;
     left: 30%;
-  }
-
-  .question {
-    background-size: contain;
   }
 }

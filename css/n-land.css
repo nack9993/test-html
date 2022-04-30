@@ -15,7 +15,7 @@
 }
 
 .question {
-  background-size: cover;
+  background-size: 100%;
   background-image: url("/assets/bg-n-land-question.png");
   background-repeat: no-repeat;
 }
@@ -28,9 +28,5 @@
 
   .ready-container {
     margin-top: -40px;
-  }
-
-  .question {
-    background-size: contain;
   }
 }
