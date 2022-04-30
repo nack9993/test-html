@@ -30,5 +30,5 @@ body {
 }
 
 .card-contact {
-  align-self: end
+  align-self: flex-end;
 }
