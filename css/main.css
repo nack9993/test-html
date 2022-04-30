@@ -243,7 +243,7 @@ hr {
 }
 
 .result-container {
-  height: 70vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
