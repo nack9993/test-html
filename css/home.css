@@ -20,6 +20,7 @@ body {
 }
 
 .logo {
+  width: 70vh;
   position: absolute;
   animation: fadeInAnimation 1s;
   animation-iteration-count: 1;
@@ -36,7 +37,7 @@ body {
 
 @media only screen and (max-width: 1500px) {
   .logo {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -47,7 +48,7 @@ body {
   }
   100% {
     opacity: 1;
-    top: 100px;
+    top: 200px;
   }
 }
 

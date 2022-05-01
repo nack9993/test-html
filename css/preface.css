@@ -31,7 +31,7 @@
 }
 
 #paper1 {
-  width: 80%;
+  width: 65%;
 }
 
 #paper2,
@@ -58,6 +58,11 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.icon-minigame {
+  margin-left: -200px;
 }
 
 .minigame-content {
@@ -207,11 +212,11 @@
   }
 
   #paper2 {
-    width: 50%;
+    width: 45%;
   }
 
   #paper3 {
-    width: 25%;
+    width: 20%;
   }
 
   .icon-minigame {

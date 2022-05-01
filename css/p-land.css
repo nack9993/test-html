@@ -4,7 +4,7 @@
 
 .p-land__title {
   position: absolute;
-  left: 25%;
+  left: 30%;
   top: 35%;
 }
 
@@ -23,6 +23,5 @@
 @media only screen and (max-width: 1500px) {
   .p-land__title {
     width: 40%;
-    left: 30%;
   }
 }
