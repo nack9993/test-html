@@ -35,12 +35,6 @@ body {
   bottom: 100px;
 }
 
-@media only screen and (max-width: 1500px) {
-  .logo {
-    width: 35%;
-  }
-}
-
 @keyframes fadeInAnimation {
   0% {
     top: -100px;
@@ -61,5 +55,39 @@ body {
   100% {
     opacity: 1;
     bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .logo {
+    width: 35%;
+  }
+
+  .start-button {
+    width: 15%;
+    bottom: 70px;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      top: -100px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      top: 100px;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      bottom: -100px;
+    }
+
+    100% {
+      opacity: 1;
+      bottom: 70px;
+    }
   }
 }
